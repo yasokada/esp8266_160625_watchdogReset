@@ -1,6 +1,17 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUDP.h>
 
+/*
+ * This program may cause watchdog reset even after being overwritten by other EPS8266 program
+ * 
+ * Environment: Arduino 1.6.6
+ * ESP-WROOM-02
+ */
+
+/*
+ * v0.1 2016 Jun. 25
+ *   - add WiFi_setup()
+ */
 
 static WiFiUDP wifiUdp;
 static const int kPortUdp_logger = 7000;
